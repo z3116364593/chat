@@ -1,5 +1,6 @@
 import io from 'socket.io-client'
 import { ip } from '../api/ap'
+import { requestUserinfo } from '../api/home'
 
 const socket = io.connect('ws://' + ip)
 
@@ -15,8 +16,12 @@ export default {
     },
     mutations: {
         // 设置当前用户信息
-        setUserInfo(state, userInfo) {
-            state.userInfo = JSON.parse(JSON.stringify(userInfo))
+        async setUserInfo(state) {
+            let phone = localStorage.getItem('phone')
+            let response = await requestUserinfo({ phone })
+            localStorage.setItem('userInfo', JSON.stringify(response.data.user))
+            state.userInfo = response.data.user
+            console.log(state.userInfo)
         },
         // 获取所有用户
         getUsers(state) {

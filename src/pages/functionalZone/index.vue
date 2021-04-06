@@ -7,7 +7,7 @@
         </div>
         <div class="functional_personage click_active">
             <div>
-                <img :src="api + '/images/' + userInfo.headPortrait" alt="">
+                <img :src="api + '/images/' + (userInfo.headPortrait || 'default_avatar.jpg')" alt="">
             </div>
             <div>
                 <div>

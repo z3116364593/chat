@@ -60,15 +60,13 @@ export default {
                 password: state.password
             }
             let response = await requestLogin(params)
+            localStorage.setItem('phone', state.phone)
             localStorage.setItem('token', JSON.stringify(params))
-            // store.commit('login', params)
             state.loading = false
             if(response.data.type === 'success') {
                 localStorage.setItem('connect', response.data.token)
                 store.commit('connect', response.data.token)
-                let res = await requestUserinfo({ phone: state.phone })
-                // console.log(res.data.user)
-                localStorage.setItem('userInfo', JSON.stringify(res.data.user))
+                store.commit('setUserInfo')
                 router.push('/info')
             }
         }

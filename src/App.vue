@@ -24,16 +24,12 @@ export default {
 
     onMounted(() => {
       store.commit('getUsers')
-      // store.commit('isLogin')
       store.commit('getMsg')
 
       let id = localStorage.getItem('connect')
       if(id) store.commit('connect', id)
 
-      let userInfo = JSON.parse(localStorage.getItem('userInfo'))
-      if(userInfo) {
-        store.commit('setUserInfo', userInfo)
-      }
+      store.commit('setUserInfo')
     })
 
     watchEffect(() => {

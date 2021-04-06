@@ -18,7 +18,7 @@
                     <!-- 消息 -->
                     <div class="top_info" v-if="currentPath === '/info'">
                         <div>
-                            <img :src="api + '/images/' + userInfo.headPortrait" alt="">
+                            <img @click="toFunctionalZone" :src="api + '/images/' + (userInfo.headPortrait || 'default_avatar.jpg')" alt="">
                             <div>
                                 <p>{{ userInfo.username }}</p>
                                 <p><span class="on_line" style="margin-bottom: -0.02rem;margin-right: 0.06rem;"></span>HUAWEI Mate 30 Pro 5G 在线 - WiFi</p>
@@ -31,7 +31,7 @@
                     <!-- 联系人 -->
                     <div class="top_relation" v-if="currentPath === '/relation'">
                         <div>
-                            <img :src="api + '/images/' + userInfo.headPortrait" alt="">
+                            <img @click="toFunctionalZone" :src="api + '/images/' + (userInfo.headPortrait || 'default_avatar.jpg')" alt="">
                             <span class="on_line" style="margin-top: 0.42rem;"></span>
                         </div>
                         <p>联系人</p>
@@ -40,7 +40,7 @@
                     <!-- 看点 -->
                     <div class="top_watching" v-if="currentPath === '/watching'">
                         <div>
-                            <img :src="api + '/images/' + userInfo.headPortrait" alt="">
+                            <img @click="toFunctionalZone" :src="api + '/images/' + (userInfo.headPortrait || 'default_avatar.jpg')" alt="">
                             <span class="on_line" style="margin-top: 0.42rem;"></span>
                         </div>
                         <p>看点</p>
@@ -49,7 +49,7 @@
                     <!-- 动态 -->
                     <div class="top_discover" v-if="currentPath === '/discover'">
                         <div>
-                            <img :src="api + '/images/' + userInfo.headPortrait" alt="">
+                            <img @click="toFunctionalZone" :src="api + '/images/' + (userInfo.headPortrait || 'default_avatar.jpg')" alt="">
                             <span class="on_line" style="margin-top: 0.42rem;"></span>
                         </div>
                         <p>动态</p>
@@ -220,9 +220,13 @@ export default {
             }, 200)
         }
 
-        //
         const toHome = () => {
             state.moveIndex = 1
+            toMove()
+        }
+
+        const toFunctionalZone = () => {
+            state.moveIndex = 0
             toMove()
         }
 
@@ -238,7 +242,8 @@ export default {
             onTouchEnd,
             toHome,
             moreClick,
-            userInfo
+            userInfo,
+            toFunctionalZone
         }
     }
 }
