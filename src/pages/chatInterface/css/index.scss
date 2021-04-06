@@ -1,0 +1,112 @@
+.interface {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    .interface-top {
+        height: 0.9rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 0.29rem;
+        background-color: #fff;
+        >i:nth-of-type(1) {
+            font-size: 0.44rem;
+            color: rgb(200, 200, 202);
+        }
+
+        >i:nth-of-type(2) {
+            font-size: 0.5rem;
+            color: rgb(200, 200, 202);
+        }
+
+        >div:nth-of-type(1) {
+            >p {
+                font-size: 0.3rem;
+                color: rgb(68, 68, 76);
+                font-weight: 500;
+            }
+        }
+    }
+
+    .interface-content {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        overflow-y: auto;
+        padding-bottom: 0.3rem;
+        ul {
+            >li {
+                margin-top: 0.36rem;
+                display: flex;
+                justify-content: space-between;
+                >div {
+                    display: flex;
+                    align-items: flex-start;
+                    >p {
+                        max-width: 5rem;
+                        min-height: 0.52rem;
+                        line-height: 0.52rem;
+                        border-radius: 0.06rem;
+                        font-size: 0.32rem;
+                        padding: 0.1rem 0.2rem;
+                    }
+
+                    >img {
+                        width: 0.8rem;
+                        height: 0.8rem;
+                        border-radius: 50%;
+                        margin: 0 0.2rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .interface-footer {
+        height: 1.04rem;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        align-items: center;
+        border-top: 1px solid rgb(237, 237, 237);
+        padding: 0 0.2rem;
+        >div:nth-of-type(1) {
+            display: flex;
+            align-items: center;
+            >input {
+                width: 5.16rem;
+                height: 0.7rem;
+                border: none;
+                outline: none;
+                padding: 0 0 0 0.1rem;
+                background-color: #F7F8FA;
+                border-radius: 0.06rem;
+                caret-color: var(--color);
+                font-size: 0.36rem;
+                padding-left: 0.2rem;
+            }
+
+            .send-btn {
+                height: 0.7rem;
+                margin-left: 0.1rem;
+                span {
+                    font-size: 0.3rem;
+                }
+            }
+        }
+    }
+}
+
+.van-pull-refresh {
+    overflow: visible!important;
+}
+
+.van-pull-refresh__head {
+    >div {
+        font-size: 0.3rem!important;
+        p, span {
+            font-size: 0.3rem!important;
+        }
+    }
+}

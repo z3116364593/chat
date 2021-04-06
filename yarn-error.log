@@ -1,0 +1,41 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\yarn\bin\yarn.js add babel-plugin-import -D
+
+PATH: 
+  C:\Program Files (x86)\NetSarang\Xshell 6\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files\MongoDB\Server\3.4\bin;C:\Program Files\MySQL\MySQL Server 5.5\bin;D:\JAVA\jdk1.8.0_241\bin;C:\Program Files\nodejs\;C:\Windows\System32\cmd.exe;D:\软件\Microsoft VS Code\bin;C:\Users\梓\AppData\Roaming\npm;C:\Program Files\nodejs\node_global;
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  10.16.3
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: ENOENT: no such file or directory, copyfile 'C:\Users\梓\AppData\Local\Yarn\Cache\v6\npm-color-convert-1.9.3-bb71850690e1f136567de629d2d5471deda4c1e8-integrity\node_modules\color-convert\CHANGELOG.md' -> 'D:\Vue\通讯\chat\node_modules\@babel\highlight\node_modules\color-convert\CHANGELOG.md'
+
+npm manifest: 
+  {
+    "name": "chat",
+    "version": "0.0.0",
+    "scripts": {
+      "dev": "vite",
+      "build": "vite build"
+    },
+    "dependencies": {
+      "vant": "^3.0.0-beta.7",
+      "vue": "^3.0.2"
+    },
+    "devDependencies": {
+      "vite": "^1.0.0-rc.8",
+      "@vue/compiler-sfc": "^3.0.2"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

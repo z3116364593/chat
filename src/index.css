@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 0.5rem;
+}
+
+#app {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: #303038;
+}
+
+.close {
+  font-size: 0.58rem;
+  color: #C8C8CA;
+}
+
+:root {
+  --color: #50D2C2;
+}
+
+.van-toast__text {
+  font-size: 0.36rem!important;
+}
+
+.status_bar {
+  height: 24px;  
+  width: 100%;  
+  background-color: #fff;
+}
+
+p {
+  color: #070707;
+}
+
+.svip {
+  display: inline-block;
+  height: 0.32rem;
+  line-height: 0.32rem;
+  font-size: 0.24rem;
+  /* font-family: cursive; */
+  color: #F9E997;
+  padding: 0 4px;
+  background-image: linear-gradient(to right, #FF6E78 , #FF2032);
+  transform: skewX(-20deg)
+}
+
+/* 在线 */
+.on_line {
+  display: inline-block;
+  width: 0.17rem;
+  height: 0.17rem;
+  border-radius: 50%;
+  background-color: #26E78B;
+}
+
+.click_active:active {
+  opacity: 0.5;
+}
+
+/* 搜索框样式 */
+.search {
+  height: 1.12rem;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 0.3rem;
+}
+
+.search > div {
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: #C9DBDE;
+  height: 0.64rem;
+  border-radius: 0.34rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #2A393C;
+}
+
+.search > div > p {
+  display: flex;
+  align-content: center;
+}
+
+.search > div > p > .search_text {
+  font-size: 0.3rem;
+  margin-left: 0.08rem;
+}

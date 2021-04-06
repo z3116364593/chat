@@ -1,0 +1,191 @@
+.home-view {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+}
+
+.home-all {
+    width: 200%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+}
+
+.settings-page {
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+    background-color: #fff;
+    // background-image: url('http://192.168.3.109:8000/images/1371511736.jpeg');
+    background-size: cover;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+    background-color: #fff;
+    // background-image: url('http://192.168.3.109:8000/images/1371511736.jpeg');
+    background-size: cover;
+}
+
+.home-top {
+    height: 0.95rem;
+    background-color: #fff;
+    padding: 0 0.29rem;
+    >div {
+        height: 100%;
+    }
+
+    // 消息
+    .top_info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        >div:nth-of-type(1) {
+            display: flex;
+            align-items: center;
+            >img {
+                width: 0.6rem;
+                height: 0.6rem;
+                display: block;
+                border-radius: 50%;
+            }
+
+            >div:nth-of-type(1) {
+                height: 0.6rem;
+                margin-left: 0.24rem;
+                margin-top: -0.14rem;
+                >p:nth-of-type(1) {
+                    font-size: 0.31rem;
+                }
+
+                >p:nth-of-type(2) {
+                    font-size: 0.2rem;
+                    margin-top: -0.02rem;
+                }
+            }
+        }
+    }
+
+    // 联系人
+    .top_relation {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        >div:nth-of-type(1) {
+            display: flex;
+            >img {
+                width: 0.6rem;
+                height: 0.6rem;
+                display: block;
+                border-radius: 50%;
+            }
+        }
+
+        >p:nth-of-type(1) {
+            font-size: 0.32rem;
+        }
+
+        >p:nth-of-type(2) {
+            width: 0.83rem;
+        }
+    }
+
+    // 看点
+    .top_watching {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        >div:nth-of-type(1) {
+            display: flex;
+            >img {
+                width: 0.6rem;
+                height: 0.6rem;
+                display: block;
+                border-radius: 50%;
+            }
+        }
+
+        >p:nth-of-type(1) {
+            font-size: 0.32rem;
+        }
+
+        >p:nth-of-type(2) {
+            width: 0.83rem;
+        }
+    }
+
+    // 动态
+    .top_discover {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        >div:nth-of-type(1) {
+            display: flex;
+            >img {
+                width: 0.6rem;
+                height: 0.6rem;
+                display: block;
+                border-radius: 50%;
+            }
+        }
+
+        >p:nth-of-type(1) {
+            font-size: 0.32rem;
+        }
+
+        >p:nth-of-type(2) {
+            width: 0.83rem;
+        }
+    }
+}
+
+.home-content {
+    width: 100%;
+    height: 1rem;
+    flex: 1;
+    overflow: scroll;
+}
+
+.home-footer {
+    height: 1rem;
+    background-color: #F7FAF9;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-top: 1px solid #EDEDED;
+    >li {
+        width: 25%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        transition: all 0.1s;
+        >i {
+            font-size: 0.5rem;
+        }
+
+        .icon-dibutubiao_kandian, .icon-dibutubiao_kandian_xuanzhong {
+            font-size: 0.48rem;
+        }
+
+        >p {
+            font-size: 0.2rem;
+        }
+    }
+}
+
+.van-tabs, .van-tabs__content {
+    height: 100%;
+}
+
+.van-swipe-item {
+    overflow-y: auto;
+}

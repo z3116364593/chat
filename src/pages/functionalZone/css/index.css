@@ -1,0 +1,137 @@
+.functional {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.functional_zone {
+  margin-top: 0.13rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.4rem;
+}
+
+.functional_zone > p:nth-of-type(1) {
+  font-size: 0.3rem;
+  color: #070707;
+  font-family: SimHei;
+}
+
+.functional_zone > p:nth-of-type(1):active {
+  opacity: 0.5;
+}
+
+.functional_personage {
+  margin-top: 0.53rem;
+  padding: 0 0.4rem;
+  display: flex;
+}
+
+.functional_personage > div:nth-of-type(1) {
+  width: 1.17rem;
+  height: 1.17rem;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  margin-right: 0.23rem;
+}
+
+.functional_personage > div:nth-of-type(1) > img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 50%;
+}
+
+.functional_personage > div:nth-of-type(2) > div:nth-of-type(1) {
+  display: flex;
+}
+
+.functional_personage > div:nth-of-type(2) > div:nth-of-type(1) > p:nth-of-type(1) {
+  font-size: 0.33rem;
+  margin-right: 0.16rem;
+}
+
+.functional_personage > div:nth-of-type(2) > div:nth-of-type(2) {
+  height: 0.38rem;
+  display: flex;
+  align-items: center;
+}
+
+.functional_personage > div:nth-of-type(2) > div:nth-of-type(2) > p:nth-of-type(1) {
+  font-size: 0.24rem;
+}
+
+.functional_personage > div:nth-of-type(2) > p:nth-of-type(1) {
+  font-size: 0.27rem;
+  display: flex;
+}
+
+.functional_personage > div:nth-of-type(2) > p:nth-of-type(1) > .icon-edit-fill {
+  font-size: 0.33rem;
+  margin-right: 0.12rem;
+  margin-top: 0.04rem;
+}
+
+.functional_list {
+  margin-top: 1.17rem;
+  display: flex;
+  flex: 1;
+}
+
+.functional_list > ul {
+  width: 100%;
+}
+
+.functional_list > ul > li {
+  width: 100%;
+  height: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0.4rem;
+}
+
+.functional_list > ul > li > p:nth-of-type(1) {
+  display: flex;
+  align-items: center;
+}
+
+.functional_list > ul > li > p:nth-of-type(1) .icon-Bookmarkdeleteweb {
+  color: #fff;
+  font-size: 0.5rem;
+}
+
+.functional_list > ul > li > p:nth-of-type(1) > span:nth-of-type(2) {
+  font-size: 0.27rem;
+  color: #fff;
+  margin-left: 0.24rem;
+}
+
+.functional_list > ul > li:active {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.functional_foot {
+  padding: 0 0.4rem;
+  display: flex;
+  margin-bottom: 0.5rem;
+}
+
+.functional_foot > div {
+  height: 40px;
+  text-align: center;
+  margin-right: 0.8rem;
+}
+
+.functional_foot > div > span {
+  font-size: 0.44rem;
+  color: #fff;
+}
+
+.functional_foot > div > p {
+  color: #fff;
+  font-size: 0.22rem;
+  margin-top: 0.08rem;
+}

@@ -1,0 +1,132 @@
+.register {
+  width: calc(100% - 1.2rem);
+  background-color: #fff;
+  position: relative;
+  overflow: auto;
+  padding: 0 0.6rem;
+}
+
+.register > div:nth-of-type(1) {
+  height: 12.14rem;
+  overflow: hidden;
+}
+
+.register .register-footer {
+  width: 100%;
+}
+
+.register .register-footer > p:nth-of-type(1) {
+  position: relative;
+  height: 1.4rem;
+  text-align: center;
+  letter-spacing: 0.03rem;
+  font-size: 0.2rem;
+  color: #C0C0C1;
+  line-height: 1.4rem;
+}
+
+.register .register-footer > p:nth-of-type(1) > span {
+  color: #25252D;
+  font-size: 0.2rem;
+  margin-left: 0.2rem;
+}
+
+.register-title {
+  width: 100%;
+  text-align: center;
+  margin-top: 0.7rem;
+  font-size: 0.38rem;
+}
+
+.head-portrait {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-top: 0.84rem;
+  margin-bottom: 0.55rem;
+  position: relative;
+}
+
+.head-portrait > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.head-portrait > p {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  padding: 0;
+}
+
+.head-portrait .register-upload {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  padding: 0;
+}
+
+.head-portrait .register-upload i {
+  font-size: 0.36rem;
+}
+
+.head-portrait .register-hide {
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  opacity: 0;
+}
+
+.footer-btn {
+  width: 100%;
+  border-radius: 0;
+  height: 1.1rem;
+}
+
+.footer-btn span {
+  font-size: 0.36rem;
+  letter-spacing: 0.03rem;
+}
+
+.form-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-item > p {
+  color: #ADADAF;
+  font-size: 0.24rem;
+  margin-top: 0.44rem;
+  letter-spacing: 0.03rem;
+}
+
+.form-item > input {
+  width: 100%;
+  height: 0.74rem;
+  outline: none;
+  font-size: 0.3rem;
+  border: none;
+  border-bottom: 0.02rem solid #F3F3F4;
+  color: #34343C;
+  letter-spacing: 0.01rem;
+}
+
+.form-item > input[type='password'] {
+  font-size: 0.4rem;
+  letter-spacing: 0.1rem;
+}
+
+.form-item > input::-webkit-input-placeholder {
+  font-size: 0.3rem;
+  color: #ADADAF;
+  letter-spacing: 0.01rem;
+}
